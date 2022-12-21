@@ -23,6 +23,7 @@
    body {
       display: flex;
       flex-direction: column;
+      overflow: hidden;
   }
     #map { 
         height: 300px;
@@ -37,7 +38,7 @@
         border: 1px solid #ccc;
         overflow-y: scroll;
         scroll-behavior: smooth;
-        height: 400px;
+        height: 200px;
   overflow-y: scroll;
   scroll-behavior: smooth;
     }
