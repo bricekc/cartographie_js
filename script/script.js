@@ -30,3 +30,5 @@ marker.bindPopup("<b>coucou tout le monde</b><br>bonjourrrrr.");
 //ajout d'un popup sur le cercle pour l'afficher directement il faut rajouter .openPopup()
 circle.bindPopup("Je suis un cercle");
 
+//ajout d'un popup sur le polygone pour l'afficher directement il faut rajouter .openPopup()
+polygon.bindPopup("Je suis un polygone");
