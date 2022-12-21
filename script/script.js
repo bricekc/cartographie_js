@@ -41,10 +41,14 @@ function onMapClick(e) {
 map.on('click', onMapClick);
 let people = document.querySelector(".people");
 let button = people.querySelector("button");
-let longitude = people.querySelector(".people_longitude").innerHTML;
-let latitude = people.querySelector(".people_latitude").innerHTML;
+let longitude = people.querySelector(".people__longitude").innerHTML;
+let latitude = people.querySelector(".people__latitude").innerHTML;
+let lastname = people.querySelector(".people__lastname").innerHTML;
+let firstname = people.querySelector(".people__firstname").innerHTML;
 
 button.addEventListener("click", function (){
-    var markerpeople = L.marker([longitude, latitude]).addTo(map);
-    markerpeople.bindPopup("Adresse de Kuca Brice").openPopup();
+    var markerpeople = L.marker([longitude, latitude]);
+    markerpeople.addTo(map);
+    markerpeople.bindPopup("Adresse de "+lastname+" "+firstname).openPopup();
+
 });
