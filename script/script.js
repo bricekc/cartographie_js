@@ -45,10 +45,18 @@ let longitude = people.querySelector(".people__longitude").innerHTML;
 let latitude = people.querySelector(".people__latitude").innerHTML;
 let lastname = people.querySelector(".people__lastname").innerHTML;
 let firstname = people.querySelector(".people__firstname").innerHTML;
-
+let compteur = 0;
+let markerpeople;
 button.addEventListener("click", function (){
-    var markerpeople = L.marker([longitude, latitude]);
-    markerpeople.addTo(map);
-    markerpeople.bindPopup("Adresse de "+lastname+" "+firstname).openPopup();
+    if (compteur==0)
+    {
+        markerpeople = L.marker([longitude, latitude]);
+        markerpeople.addTo(map);
+        markerpeople.bindPopup("Adresse de "+lastname+" "+firstname).openPopup();
+        compteur++;
+    } else {
+        markerpeople.remove();
+        compteur--;
+    }
 
 });
