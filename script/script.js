@@ -40,6 +40,8 @@ function onMapClick(e) {
 
 map.on('click', onMapClick);
 let peoples = document.querySelectorAll(".people");
+
+//ajout d'un évènement aux click d'un bouton pour afficher l'emplacement des coordonnées renseignés dans la balise people
 for (let i=0; i<peoples.length; i++)
 {
     let people = peoples[i];
@@ -51,6 +53,7 @@ for (let i=0; i<peoples.length; i++)
     let compteur = 0;
     let markerpeople;
     button.addEventListener("click", function (){
+        map.setView([longitude, latitude], 13);
         if (compteur==0)
         {
             markerpeople = L.marker([longitude, latitude]);
