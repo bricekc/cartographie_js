@@ -16,3 +16,10 @@ var circle = L.circle([49.27, 4.031696], {
     fillOpacity: 0.5,
     radius: 100
 }).addTo(map);
+
+//ajout d'un polygone sur la carte dans Reims
+var polygon = L.polygon([
+    [49.27354, 4],
+    [49.28, 4],
+    [49.28, 4.12]
+]).addTo(map);
