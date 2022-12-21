@@ -7,5 +7,12 @@ L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
     attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
 }).addTo(map);
 
-//ajout du marqueur
+//ajout d'un marqueur sur la carte dans Reims
 var marker = L.marker([49.258329, 4.031696]).addTo(map);
+
+//ajout d'un cercle sur la carte dans Reims
+var circle = L.circle([49.27, 4.031696], {
+    color: 'red',
+    fillOpacity: 0.5,
+    radius: 100
+}).addTo(map);
