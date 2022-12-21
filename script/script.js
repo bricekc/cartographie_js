@@ -23,3 +23,10 @@ var polygon = L.polygon([
     [49.28, 4],
     [49.28, 4.12]
 ]).addTo(map);
+
+//ajout d'un popup sur le marqueur pour l'afficher directement il faut rajouter .openPopup()
+marker.bindPopup("<b>coucou tout le monde</b><br>bonjourrrrr.");
+
+//ajout d'un popup sur le cercle pour l'afficher directement il faut rajouter .openPopup()
+circle.bindPopup("Je suis un cercle");
+
