@@ -20,21 +20,26 @@
     border: 1px solid #ccc;
  }
 @media (max-width: 1000px) {
+   body {
+      display: flex;
+      flex-direction: column;
+  }
     #map { 
         height: 300px;
         width: 100%;
-        position: fixed;
-    }
-    body {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        margin: 0 auto;
+        text-align: center;
     }
     .all_people {
         display: flex;
-        flex: auto;
         flex-direction: column;
         border: 1px solid #ccc;
         overflow-y: scroll;
+        scroll-behavior: smooth;
+        height: 400px;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
     }
     .people {
         display: flex;
