@@ -39,8 +39,12 @@ function onMapClick(e) {
 }
 
 map.on('click', onMapClick);
+let people = document.querySelector(".people");
+let button = people.querySelector("button");
+let longitude = people.querySelector(".people_longitude").innerHTML;
+let latitude = people.querySelector(".people_latitude").innerHTML;
 
-let people = document.querySelector("button").addEventListener("click", function (){
-var markerpeople = L.marker([49.240532, 4.057995]).addTo(map);
-markerpeople.bindPopup("Adresse de Kuca Brice").openPopup();
+button.addEventListener("click", function (){
+    var markerpeople = L.marker([longitude, latitude]).addTo(map);
+    markerpeople.bindPopup("Adresse de Kuca Brice").openPopup();
 });
