@@ -2,3 +2,8 @@
     height: 500px;
     width: 50%;
  }
+
+ body {
+    display: flex;
+    flex-direction: row;
+ }
