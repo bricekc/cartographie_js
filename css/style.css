@@ -19,3 +19,26 @@
     flex-direction: column;
     border: 1px solid #ccc;
  }
+@media (max-width: 1000px) {
+    #map { 
+        height: 300px;
+        width: 100%;
+        position: fixed;
+    }
+    body {
+        display: flex;
+        flex-direction: column;
+    }
+    .all_people {
+        display: flex;
+        flex: auto;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        overflow-y: scroll;
+    }
+    .people {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid #ccc;
+    }
+   }
