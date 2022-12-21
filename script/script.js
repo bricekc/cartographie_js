@@ -32,3 +32,10 @@ circle.bindPopup("Je suis un cercle");
 
 //ajout d'un popup sur le polygone pour l'afficher directement il faut rajouter .openPopup()
 polygon.bindPopup("Je suis un polygone");
+
+//ajout d'une fonction qui permet d'afficher les coordonnées de la ou on clique
+function onMapClick(e) {
+    alert("You clicked the map at " + e.latlng);
+}
+
+map.on('click', onMapClick);
